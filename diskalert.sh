@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 printf "\n\n ----  Result for Disk Usage on /dev/sda3/   ----"
 diskusage=$(df -h / | awk '{print $5}' | tr -d [:alpha:],[=%=] | sed '/^$/d')
